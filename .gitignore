@@ -163,6 +163,7 @@ cython_debug/
 *.jpg
 *.mp4
 *.jpg
+*.pth
 
 .DS_Store
 scripts/.DS_Store

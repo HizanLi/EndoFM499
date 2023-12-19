@@ -10,15 +10,23 @@ import shutil
 
 datadir = 'pretrain/'
 
+# datasets = {
+#     'Colonoscopic': 0,
+#     'SUN-SEG': 0,
+#     'LDPolypVideo': 0,
+#     'Hyper-Kvasir': 0,
+#     'Kvasir-Capsule': 0,
+#     'CholecT45': 0,
+# }
+
+# Since we do not have 'SUN-SEG'
 datasets = {
     'Colonoscopic': 0,
-    'SUN-SEG': 0,
     'LDPolypVideo': 0,
     'Hyper-Kvasir': 0,
     'Kvasir-Capsule': 0,
     'CholecT45': 0,
 }
-
 
 for dataset in datasets.keys():
     videolist = glob.glob(f'{datadir}/{dataset}/*.mp4')
