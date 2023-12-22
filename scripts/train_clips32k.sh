@@ -10,7 +10,7 @@ fi
 
 
 python -m torch.distributed.launch \
-  --nproc_per_node=4 \
+  --nproc_per_node=1 \
   --master_port="$RANDOM" \
   train_ssl.py \
   --arch "timesformer" \
